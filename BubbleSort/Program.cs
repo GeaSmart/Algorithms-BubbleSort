@@ -32,16 +32,19 @@ namespace BubbleSort
             Console.ReadLine();
         }
 
+        //Método de ordenamiento burbuja | Bubble sort method
         private static int[] order(int[] List)
         {
             int temp;
+            //Recorremos la lista de atrás para adelante
             for (int i = List.Length; i > 0; i--)
             {                
+                //Analizamos numero y antecesor
                 for (int j = 0; j < i-1; j++)
-                {
-                    
+                {                    
                     if (List[j] > List[j + 1])
                     {
+                        //Si es mayor hacemos swap de variables
                         temp = List[j+1];
                         List[j + 1] = List[j];
                         List[j] = temp;
